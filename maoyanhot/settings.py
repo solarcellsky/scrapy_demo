@@ -13,7 +13,7 @@ BOT_NAME = 'maoyanhot'
 
 SPIDER_MODULES = ['maoyanhot.spiders']
 NEWSPIDER_MODULE = 'maoyanhot.spiders'
-
+FEED_EXPORT_ENCODING='UTF8'
 
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
 #USER_AGENT = 'maoyanhot (+http://www.yourdomain.com)'
