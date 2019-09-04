@@ -25,10 +25,10 @@ class JsonPipeline(object):
     def __init__(self):
         print('======================== Openning file to write...')
         timestamp = datetime.datetime.now().strftime('%Y%m%d%H%M%S')
-        self.file = codecs.open(timestamp + 'maoyan.json', 'wb', encoding = 'utf-8')
+        self.file = codecs.open(timestamp + '_Maoyan.json', 'wb', encoding = 'utf-8')
 
     def process_item(self, item, spider):
-        print('======================== Writting ...')
+        print('======================== Writting file...')
         line = json.dumps(dict(item), ensure_ascii = False) + '\n'
         self.file.write(line)
         return item
